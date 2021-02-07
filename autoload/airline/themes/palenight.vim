@@ -22,7 +22,7 @@ let s:airline_error = [s:colors.black.gui, s:colors.red.gui, s:colors.black.cter
 " ---
 " Normal
 
-let s:airline_a_normal = [s:colors.black.gui, s:colors.blue_purple.gui, s:colors.black.cterm, s:colors.blue_purple.cterm]
+let s:airline_a_normal = [s:colors.black.gui, s:colors.blue.gui, s:colors.black.cterm, s:colors.blue_purple.cterm]
 let s:airline_b_normal = [s:colors.white.gui, s:colors.white_mask_3.gui, s:colors.white.cterm, s:colors.white_mask_3.cterm]
 let s:airline_c_normal = [s:colors.white.gui, s:colors.white_mask_1.gui, s:colors.white.cterm, s:colors.white_mask_1.cterm, s:wrap_opts(['italic'])]
 let g:airline#themes#palenight#palette.normal = airline#themes#generate_color_map(s:airline_a_normal, s:airline_b_normal, s:airline_c_normal)
@@ -73,7 +73,7 @@ let g:airline#themes#palenight#palette.replace_modified.airline_error = g:airlin
 " ---
 " Visual
 
-let s:airline_a_visual = [s:colors.black.gui, s:colors.yellow.gui, s:colors.black.cterm, s:colors.yellow.cterm]
+let s:airline_a_visual = [s:colors.black.gui, s:colors.purple.gui, s:colors.black.cterm, s:colors.yellow.cterm]
 let s:airline_b_visual = s:airline_b_normal
 let s:airline_c_visual = s:airline_c_normal
 let g:airline#themes#palenight#palette.visual = airline#themes#generate_color_map(s:airline_a_visual, s:airline_b_visual, s:airline_c_visual)
