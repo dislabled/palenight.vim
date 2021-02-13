@@ -76,7 +76,7 @@ let g:panenight_color_overrides = {
 
 ## Contributors
 
-[The lovely people that have contributed and made to palenight.vim](https://github.com/drewtempelmeyer/panenight.vim/graphs/contributors)
+[The lovely people that have contributed and made to palenight.vim](https://github.com/drewtempelmeyer/palenight.vim/graphs/contributors)
 
 [screenshot]: images/screenshot.png
 [palenight]: https://github.com/idrewtempelmeyer/palenight.vim
