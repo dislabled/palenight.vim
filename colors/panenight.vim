@@ -1,9 +1,9 @@
 " vim:fdm=marker
 " Vim Color File
-" Name:       palenight.vim
-" Maintainer: https://github.com/drewtempelmeyer/palenight.vim
+" Name:       panenight.vim
+" Maintainer: https://github.com/drewtempelmeyer/panenight.vim
 " License:    The MIT License (MIT)
-" Based On:   https://github.com/joshdick/onedark.vim
+" Based On:   https://github.com/drewtempelmeyer/palenight.vim
 
 " Initialization {{{
 
@@ -15,26 +15,26 @@ endif
 
 set t_Co=256
 
-let g:colors_name="palenight"
+let g:colors_name="panenight"
 
 " Set to "256" for 256-color terminals, or
 " set to "16" to use your terminal emulator's native colors
 " (a 16-color palette for this color scheme is available; see
 " < https://github.com/joshdick/onedark.vim/blob/master/README.md >
 " for more information.)
-if !exists("g:palenight_termcolors")
-  let g:palenight_termcolors = 256
+if !exists("g:panenight_termcolors")
+  let g:panenight_termcolors = 256
 endif
 
 " Not all terminals support italics properly. If yours does, opt-in.
-if !exists("g:palenight_terminal_italics")
-  let g:palenight_terminal_italics = 0
+if !exists("g:panenight_terminal_italics")
+  let g:panenight_terminal_italics = 0
 endif
 
 " This function is based on one from FlatColor: https://github.com/MaxSt/FlatColor/
 " Which in turn was based on one found in hemisu: https://github.com/noahfrederick/vim-hemisu/
 function! s:h(group, style)
-  if g:palenight_terminal_italics == 0
+  if g:panenight_terminal_italics == 0
     if has_key(a:style, "cterm") && a:style["cterm"] == "italic"
       unlet a:style.cterm
     endif
@@ -42,7 +42,7 @@ function! s:h(group, style)
       unlet a:style.gui
     endif
   endif
-  if g:palenight_termcolors == 16
+  if g:panenight_termcolors == 16
     let l:ctermfg = (has_key(a:style, "fg") ? a:style.fg.cterm16 : "NONE")
     let l:ctermbg = (has_key(a:style, "bg") ? a:style.bg.cterm16 : "NONE")
   else
@@ -61,7 +61,7 @@ endfunction
 
 " public {{{
 
-function! palenight#set_highlight(group, style)
+function! panenight#set_highlight(group, style)
   call s:h(a:group, a:style)
 endfunction
 
@@ -71,7 +71,7 @@ endfunction
 
 " Color Variables {{{
 
-let s:colors = palenight#GetColors()
+let s:colors = panenight#GetColors()
 
 let s:red = s:colors.red
 let s:light_red = s:colors.light_red
