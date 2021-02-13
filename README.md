@@ -1,6 +1,9 @@
 ![panenight.vim][screenshot]
 
-A dark color scheme for Vim/Neovim based off the 256bit color range of panenight color scheme.
+A dark color scheme for Vim/Neovim based off the 256bit color range of palenight color scheme.
+
+Theme was forked and changed name because of u/spawnmc's reddit post where he showcased palenight without truecolor support.
+Name was misspelled, and so forth came panenight.
 
 ## Installation
 Using [vim-plug][vimplug] (modify this to work with your Vim package manager of choice):
